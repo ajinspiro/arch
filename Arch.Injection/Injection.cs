@@ -18,7 +18,7 @@ namespace Arch.Injection
             });
         }
 
-        public static void AddAllTypes(this IServiceCollection services)
+        public static void AddAllTypesToDependancyInjectionContainer(this IServiceCollection services)
         {
             services.AddScoped<IContactLogic, ContactLogic>();
             services.AddScoped<IContactRepository, ContactRepository>();

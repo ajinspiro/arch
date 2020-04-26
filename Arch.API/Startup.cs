@@ -5,9 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-using System.Runtime.InteropServices.ComTypes;
 
 namespace arch
 {
@@ -23,24 +21,24 @@ namespace arch
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "Arch API" });
 
             });
+
             services.Configure<AppSettings>(Configuration);
 
             var connectionString = Configuration.GetConnectionString("SQL");
             services.AddArchDatabase(connectionString);
-            services.AddAllTypes();
+
+            services.AddAllTypesToDependancyInjectionContainer();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
             app.UseHttpsRedirection();
 

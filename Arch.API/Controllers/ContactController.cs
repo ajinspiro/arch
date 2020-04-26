@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace arch.Controllers
 {
     [ApiController]
-    [Route("contact")]
+    [Route("[controller]")]
     public class ContactController : ControllerBase
     {
         private readonly ILogger<ContactController> _logger;
@@ -18,15 +18,14 @@ namespace arch.Controllers
             _contactLogic = contactLogic;
         }
 
-        [HttpGet("gett")]
-        public IEnumerable<Contact> Geta()
+        [HttpGet]
+        public IList<IContact> Get()
         {
-            //return _contactLogic.GetContacts();
-            return new List<Contact> { new Contact { Name = "Arun" }, new Contact { Name = "Sudin" } };
+            return _contactLogic.GetContacts();
         }
 
-        [HttpPost("postt")]
-        public IActionResult Posta([FromBody] Contact contact)
+        [HttpPost]
+        public IActionResult Post([FromBody] Contact contact)
         {
             _contactLogic.SaveContact(contact);
             return StatusCode(201);

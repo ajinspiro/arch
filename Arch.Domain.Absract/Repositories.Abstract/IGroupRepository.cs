@@ -1,4 +1,4 @@
-﻿using Arch.Domain.Absract.DomainObjects;
+﻿using Arch.Domain.Absract.IEntity;
 using System;
 using System.Collections.Generic;
 using System.Text;

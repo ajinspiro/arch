@@ -1,6 +1,6 @@
 ﻿using Arch.DataAccess;
 using Arch.DataAccess.Repository;
-using Arch.Domain.Absract.Logic;
+using Arch.Domain.Absract.ILogic;
 using Arch.Domain.Absract.Repositories.Abstract;
 using Arch.Domain.Implementations.Logic;
 using Microsoft.EntityFrameworkCore;

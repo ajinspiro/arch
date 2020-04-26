@@ -1,6 +1,6 @@
-﻿using Arch.Domain.Absract.DomainObjects;
+﻿using Arch.Domain.Absract.IEntity;
 
-namespace Arch.Domain.Implementations.DomainObjects
+namespace Arch.Domain.Implementations.Entity
 {
     public class Contact : IContact
     {

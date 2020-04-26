@@ -1,5 +1,5 @@
-﻿using Arch.Domain.Absract.DomainObjects;
-using Arch.Domain.Absract.Logic;
+﻿using Arch.Domain.Absract.IEntity;
+using Arch.Domain.Absract.ILogic;
 using Arch.Domain.Absract.Repositories.Abstract;
 using System;
 using System.Collections.Generic;

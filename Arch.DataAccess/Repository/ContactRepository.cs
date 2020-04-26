@@ -1,6 +1,6 @@
-﻿using Arch.Domain.Absract.DomainObjects;
+﻿using Arch.Domain.Absract.IEntity;
 using Arch.Domain.Absract.Repositories.Abstract;
-using Arch.Domain.Implementations.DomainObjects;
+using Arch.Domain.Implementations.Entity;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;

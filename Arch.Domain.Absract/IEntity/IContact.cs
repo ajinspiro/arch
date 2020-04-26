@@ -1,4 +1,4 @@
-﻿namespace Arch.Domain.Absract.DomainObjects
+﻿namespace Arch.Domain.Absract.IEntity
 {
     public interface IContact
     {

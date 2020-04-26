@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Arch.Domain.Absract.DomainObjects;
-using Arch.Domain.Absract.Logic;
-using Arch.Domain.Implementations.DomainObjects;
+using Arch.Domain.Absract.IEntity;
+using Arch.Domain.Absract.ILogic;
+using Arch.Domain.Implementations.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 

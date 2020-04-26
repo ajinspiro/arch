@@ -1,4 +1,4 @@
-﻿using Arch.Domain.Implementations.DomainObjects;
+﻿using Arch.Domain.Implementations.Entity;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 

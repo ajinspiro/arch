@@ -1,7 +1,7 @@
-﻿using Arch.Domain.Absract.DomainObjects;
+﻿using Arch.Domain.Absract.IEntity;
 using System.Collections.Generic;
 
-namespace Arch.Domain.Absract.Logic
+namespace Arch.Domain.Absract.ILogic
 {
     public interface IContactLogic
     {

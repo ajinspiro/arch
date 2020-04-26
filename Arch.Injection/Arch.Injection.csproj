@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Arch.Domain.Absract\Arch.Domain.Absract.csproj" />
+    <ProjectReference Include="..\Arch.DataAccess\Arch.DataAccess.csproj" />
+    <ProjectReference Include="..\Arch.Domain.Implementations\Arch.Domain.Implementations.csproj" />
+  </ItemGroup>
+
+</Project>

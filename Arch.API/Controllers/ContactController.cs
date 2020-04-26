@@ -18,12 +18,14 @@ namespace arch.Controllers
             _contactLogic = contactLogic;
         }
 
+        /// <summary> Retrieve all contacts. </summary>
         [HttpGet]
         public IList<IContact> Get()
         {
             return _contactLogic.GetContacts();
         }
 
+        /// <summary> Create a new contact. </summary>
         [HttpPost]
         public IActionResult Post([FromBody] Contact contact)
         {
